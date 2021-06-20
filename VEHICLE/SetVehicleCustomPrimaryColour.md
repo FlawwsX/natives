@@ -8,13 +8,17 @@ ns: VEHICLE
 void SET_VEHICLE_CUSTOM_PRIMARY_COLOUR(Vehicle vehicle, int r, int g, int b);
 ```
 
-```
-p1, p2, p3 are RGB values for color (255,0,0 for Red, ect)  
-```
+Sets the target vehicle's primary colours to the provided RGB value.
 
 ## Parameters
-* **vehicle**: 
-* **r**: 
-* **g**: 
-* **b**: 
+* **vehicle**: The target vehicle.
+* **r**: RGB red value.
+* **g**: RGB green value.
+* **b**: RGB blue value.
 
+## Examples
+
+```lua
+local vehicle = GetVehiclePedIsIn(PlayerPedId(), false) -- Grabbing the vehicle the player is sat in.
+SetVehicleCustomPrimaryColour(vehicle, 255, 0, 0) -- Setting the colour to red using RGB values.
+```
