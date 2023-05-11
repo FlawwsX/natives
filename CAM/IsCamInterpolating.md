@@ -8,8 +8,16 @@ ns: CAM
 BOOL IS_CAM_INTERPOLATING(Cam cam);
 ```
 
+## Examples
+```lua
+SetCamActiveWithInterp(cam2, cam1, 700, 450, 450)
+repeat
+  Wait(0)
+until not IsCamInterpolating( cam2 )
+```
 
 ## Parameters
-* **cam**: 
+* **cam**: Camera handle to check is interpolating
 
 ## Return value
+Returns whether or not the specified camera is interpolating.
