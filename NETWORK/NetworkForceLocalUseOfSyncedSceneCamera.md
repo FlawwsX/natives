@@ -1,17 +1,15 @@
 ---
 ns: NETWORK
-aliases: ["0xCF8BD3B0BD6D42D7"]
+aliases: ["0xC9B43A33D09CADA7"]
 ---
-## _NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA
+## NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA
 
 ```c
-// 0xCF8BD3B0BD6D42D7 0xBFFE8B5C
-void _NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA(int netScene, char* animDict, char* animName);
+// 0xC9B43A33D09CADA7 0xC3AA2EC7
+void NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA(int sceneId);
 ```
 
 
 ## Parameters
-* **netScene**: 
-* **animDict**: 
-* **animName**: 
+* **sceneId**: 
 
